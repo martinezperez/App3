@@ -1,0 +1,335 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercer Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="acciones" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/popo.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-add-back-btn="Regresar" data-back-btn-theme="a">
+  <h1>Informacion sobre el volcan popocateptl </h1>
+   </div>
+   <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:360px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+<div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>¿Donde se ubica el volcan y de que tamaño es? </h2>
+   <p>Muestra Ubicacion y Tamaño</p>
+   </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Actividad Volcanica y Monitoreo</h2>
+   <p>Muestra Actividad y Monitoreo</p>
+   </a>
+   </li>
+     <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Historias y Leyendas</h2>
+   <p> Muestra la antigua historia y leyendas</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Medidas de prevencion</h2>
+   <p>En caso de:</p>
+   </a>
+   </li>   
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Zonas de Riesgo</h2>
+     <p>Muestra las zonas de riesgo</p>
+     </a>   
+   </li> 
+   </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="a"data-position="fixed">
+   <div>
+   <img src="imagenes/volcan.png" width="46" height="46">
+   </div>
+    <h4>Aplicacion Dos</h4>
+    <h4>Andrea Paola Martinez Perez </h4>
+    </div>
+    </div>
+    </div>  
+     
+     <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Ubicacion y tamaño</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <p>UBICACION Y TAMAÑO</p>
+       <br>
+       <P>El Popocatépetl (en náhuatl: popocatepetl, ‘el cerro que humea’‘popoca, humear; tepetl, cerro’)? es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.3
+
+Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm.</P>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Ubicacion','','imagenes/popo.jpg',1)"><img src="imagenes/UBI.jpg" width="560" height="200" id="Ubicacion"></a>
+<table width="319" border="1">
+        <tr>
+           <th width="172" scope="row">Traducion</th>
+           <td width="131">Montaña que humea</td>
+         </tr>
+         <tr>
+           <th scope="row">Tipo </th>
+           <td>Activo</td>
+         </tr>
+         <tr>
+           <th scope="row">Ubicacion</th>
+           <td>Puebla, Morelos, Mexico</td>
+         </tr>
+         <tr>
+           <th scope="row">Cordenadas</th>
+           <td><a href="http://tools.wmflabs.org/geohack/geohack.php?language=es&pagename=Popocat%C3%A9petl&params=19.022222222222_N_-98.627777777778_E_type:mountain"><span title="Mapas, fotos y otros datos de 19°01′20″N 98°37′40″O">19°01′20″N 98°37′40″O</span></a></td>
+         </tr>
+         <tr>
+           <th scope="row">Altitud</th>
+           <td>5500 <a href="https://es.wikipedia.org/wiki/Msnm" title="Msnm">msnm</a><a href="https://es.wikipedia.org/wiki/Popocat%C3%A9petl#cite_note-EPP-INEGI-1">1</a> <a href="https://es.wikipedia.org/wiki/Popocat%C3%A9petl#cite_note-SQ-INEGI-2">2</a></td>
+         </tr>
+         <tr>
+           <th scope="row">Cordillera</th>
+           <td><a href="https://es.wikipedia.org/wiki/Eje_Neovolc%C3%A1nico" title="Eje Neovolcánico">Eje Neovolcánico</a></td>
+         </tr>
+         <tr>
+           <th scope="row">Ultima Erupcion</th>
+           <td>28 de marzo de 2016</td>
+         </tr>
+       </table>
+       <p>&nbsp;</p>
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres, MPAP </h4>
+       </div></div>
+       </div>
+       
+       <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Actividad Volcanica y Monitoreo</h1>
+      </div>
+       <div data-role="content" align="center">
+         <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1> ACTIVIDAD VOLCANICA</h1>
+   <p> Actividad Volcanica</p>
+   <hr>
+   <p>l Popocatépetl es conocido por sus alta actividad volcánica, que se presenta comúnmente. Desde que se reactivó, en 1997, hasta el momento, ha presentado una serie de erupciones de las cuales la más violenta ha sido la del año 2000, y la última la noche del 4 y madrugada del 5 de noviembre de 2014. El volcán es uno de los más monitoreados del mundo y también es uno de los más peligrosos y que amenaza más de 26 millones de personas.</p>
+   <div>
+   </div>
+   <div>
+   </div>
+   </div>
+   </div>
+         <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>MONITOREO</h1>
+   <div>
+   <p>Monitoreo </p>
+   <br>
+   <p>Monitoreo Volcánico 
+Popocatépetl
+En conjunto con los institutos de Geofísica e Ingeniería de la UNAM y con la colaboración del U.S. Geological Survey.</p>
+<p>Para mas informacion consulte <a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/">http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/</a></p>
+   </div>
+   </div>
+   </div>
+       </div>
+       <div data-role="footer"data-theme="a"data-position="fixed">
+       <h4>Aplicacion Tres, MPAP </h4>
+       </div>
+       </div>
+       </div>
+       
+       <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+       
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Historias y Leyendas</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <p>Historia del Popocatepetl </p>
+       <br>
+       <p>El primer ascenso registrado a este volcán fue hecho mucho antes de la época del Imperio mexica en 1289, por los Tecuanipas; el segundo ascenso hecho por los españoles fue dirigido por Diego de Ordás en 1519, para conseguir azufre para su pólvora.
+
+El Popocatépetl ha sido uno de los volcanes más activos de México. Desde 1354 se han registrado 18 erupciones. En 1947 ocurrió una erupción de consideración, para iniciar así un periodo de actividad. Después, el 21 de diciembre de 1994 registró una explosión que produjo gas y cenizas que fueron transportados por los vientos dominantes a más de 25 km de distancia. Actualmente su actividad es moderada, pero constante, con emisión de fumarolas, compuestas de gases y vapor de agua, y repentinas e imprevistas expulsiones menores de ceniza y material volcánico. La última erupción violenta del volcán se registró en diciembre de 2000, lo que, siguiendo las predicciones de científicos, motivó la evacuación de miles de personas en las áreas cercanas al volcán. El 25 de diciembre de 2005 se produjo en el cráter del volcán una nueva explosión, que provocó una columna de humo y cenizas de tres kilómetros de altura y la expulsión de lava. Posteriormente en la mañana del 3 de junio de 2011, el Popocatépetl volvió a emitir grandes fumarolas sin causar daños. El 20 de noviembre de 2011 tuvo lugar una gran explosión que hizo temblar la tierra, escuchándose en las poblaciones cercanas a las laderas, pero sin mayor alteración. El volcán registró la mañana del 16 de enero de 2012 una fumarola de vapor de agua y ceniza, sin que esto represente riesgos para la población aledaña al coloso.
+
+El 16 de abril de 2012 el CENAPRED (Centro Nacional Para la Prevención de desastres), elevó el semáforo de alerta volcánica de fase amarillo 2 a fase amarillo 3 debido a la gran actividad que se ha estado presentando, sin que hasta el momento represente un peligro grave para la sociedad.4
+
+A las 3:23 del 30 de abril de 2013, el volcán Popocatépetl arrojó fragmentos incandescentes a 800 metros del cráter sobre la ladera noreste, informó el Centro Nacional de Prevención de Desastres (CENAPRED).
+
+El 12 de mayo de 2013, luego del fuerte estruendo que se sintió en la localidad de Atlixco, la Coordinación Nacional de Protección Civil de la Secretaría de Gobernación, informó un cambio en el semáforo de la alerta volcánica, de amarillo fase 2 a fase 3 debido al incremento en la actividad del Volcán , por lo que entró en acción el Plan Operativo Popocatépetl, A través de un comunicado, la SEGOB dio a conocer que en una reunión con el Comité Científico Asesor, en el Centro Nacional de Prevención de Desastres (CENAPRED), que debido a que las dos semanas anteriores se observaron explosiones, eventos vulcano-tectónicos, episodios de tremor y trenes de exhalaciones, el Comité concluyó por consenso, emitir la recomendación. Sin embargo el 2 de junio de 2013 el CENAPRED regresó el nivel de alerta a Amarillo fase 2.
+
+Los días 17 y 18 de junio el volcán registró varios eventos explosivos de mayor magnitud, registrando Fumarolas que alcanzaron los 4 km sobre el nivel del cráter y expulsiones de roca incandescente que alcanzaron las faldas en el lado Sur-Oeste del coloso. La alerta se mantuvo en Amarillo Fase 2.
+
+El volcán entró en actividad el 7 de julio de 2013, lanzando ceniza claramente visible en poblaciones cercanas, la ceniza también alcanzó la Ciudad de México, expulsando flujos piroclásticos e incandescencia. El semáforo volcánico se sitúa en amarillo fase 3.
+
+En 1994, los monasterios del siglo XVI, construidos en sus laderas, fueron declarados Patrimonio de la Humanidad por la Unesco.</p>
+       <img src="imagenes/popo.jpg" width="50%" height="50%">
+       <hr>
+       <p>Leyenda del popocatepetl</p>
+       <br>
+       <p>La leyenda de los volcanes nos cuenta la historia de un amor conformado por la princesa Iztaccíhuatl y el guerrero de su padre llamado Popocatépetl, él la amaba con locura, por eso el rey de la tribu le ordenó ir a una guerra y terminar con la vida del enemigo, algo que era totalmente imposible, pero si pudiera hacer este pedido su hija estaría libre para casarse con el amado, él regresó con lo que se le había encargado y todos celebraron aquel día.
+
+En un momento Popocatépetl se da cuenta que Iztaccíhuatl estaba muerta, por eso es que la lleva hacia el monte donde los Dioses la convirtieron en un volcán inactivo, en ese momento él prendió una antorcha y tenía el corazón roto por su amor perdido, los Dioses se conmovieron de ellos y decidieron convertirlo en otro volcán que hasta el fin de sus días estaría cuidando a su princesa para que por lo menos en la muerte estén unidos.</p>
+<img src="imagenes/leyenda.jpg" width="50%" height="50%">
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres, MPAP </h4>
+       </div>
+       </div>
+       </div>
+       
+          <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>MEDIDAS DE PREVENCION </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>EN CASO DE CAIDA DE CENIZA</h1>
+   <div>
+   <ul>
+     <li>No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado</li>
+     <li>Mantén la calma.</li>
+     <li>Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.</li>
+     <li>No realices actividades al aire libre y si es posible no salgas.</li>
+     <li>Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.</li>
+     <li>Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.</li>
+     <li>Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.</li>
+     <li>Ten a la mano una linterna y pilas.</li>
+     <li>La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las precauciones necesarias.</li>
+     <li>Cubre tinacos, cisternas y depósitos de agua.</li>
+     <li>Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje.</li>
+     <li>Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad y provoca que el pavimento se vuelva resbaloso.</li>
+     <li>Ante la caída de ceniza volcánica evita consumir alimentos en la vía pública.</li>
+     <li>Si permaneces expuesto por algún tiempo a las cenizas volcánicas, al ingresar a tu casa se recomienda cambiar de ropa.</li>
+     <li>Durante la caída de ceniza volcánica, evita que los menores realicen actividades al aire libre.</li>
+     <li>Mantén a tus mascotas en un lugar techado al igual que sus alimentos. Si tus macotas salen, cepíllalos antes de permitirles la entrada nuevamente.</li>
+     <li>La ceniza puede ser usada para parques, jardines, macetas o tierras de cultivo, ya que es rica en minerales.</li>
+     <li>No repitas ni difundas rumores. La ciudad de Puebla se encuentra a una distancia segura, no intentes salir.</li>
+     <li>Usa las vías de comunicación solo en caso de ser necesario.</li>
+     <li></li>
+   </ul>
+<br>
+   </div>
+      <div>
+   <img src="imagenes/medidas.jpg" width="50%" height="50%">
+
+   </div>
+   </div>
+   </div>
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1> EN CASO DE ERUPCION </h1>
+   <div>
+   <p>Una erupción volcánica puede ser un acontecimiento impresionante y destructivo. A continuación se indican varios consejos para evitar el peligro y saber qué hacer si te sorprende una erupción. </p>
+   <ul>
+     <li>Mantente alejado de volcanes activos.</li>
+   </ul>
+   <ul>
+     <li>Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.</li>
+   </ul>
+   <ul>
+     <li>Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.</li>
+   </ul>
+   <ul>
+     <li>Evacua siguiendo las recomendaciones de las <strong>autoridades</strong> para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.</li>
+   </ul>
+   <ul>
+     <li>Evita zonas de ríos y regiones bajas.</li>
+   </ul>
+   <ul>
+     <li>Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una <strong>máscara de emergencia</strong> o envuélvete la cara con un paño húmedo.</li>
+   </ul>
+   <ul>
+     <li>Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la <strong>ceniza</strong> entre en la casa.</li>
+   </ul>
+   <ul>
+     <li>Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección</li>
+   </ul>
+   <ul>
+     <li>La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los <strong>55 kilómetros</strong> por hora.</li>
+   </ul>
+   <ul>
+     <li></li>
+   </ul>
+<br>
+   </div>
+   <div>
+   <img src="imagenes/lava.jpg" width="50%" height="50%">
+   <p>La representacion de la muerte de jesus es representada por cada iglesia de atlixco con engrillados pasando por donde acostumbran poner alfombras de colores.</p>
+   </div>
+   </div>
+   </div>
+   </div>
+      </div>
+       <div>
+       <div data-role="footer"data-theme="a" data-position="fixed"">
+       <h4>Aplicacion Tres, MPAP</h4>
+       </div>
+       </div>
+       </div>
+     <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>ZONAS DE RIESGO</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <p>Area 1. podría ser afectada por la caída de cantidades importantes de arena volcánica y pómez cuyas acumulaciones alcanzarían varios centímetros, en el caso de erupciones pequeñas, y hasta varios metros con bloques de hasta 30 cm, en erupciones muy grandes.
+       <br>
+Area 2: podría ser afectada por la caída moderada de arena volcánica y pómez cuyo espesor puede variar desde 1mm o menos ( ligera cobertura de polvo fino ) en erupciones pequeñas hasta un metro en erupciones muy grandes.
+<br>
+Area 3: sería menos afectada por la caída de arena volcánica y pómez. No habría caída durante erupciones pequeñas aunque pueden acumularse decenas de centímetros durante erupciones muy grandes. Los vientos sobre el Popocatépetl generalmente soplan en dirección este-oeste. La dirección dominante de los vientos de octubre a abril es hacia el oriente, mientras que de mayo a septiembre es hacia el poniente. De esta manera es mayor la probabilidad que se acumula más arena volcánica y pómez en una región comprendida entre las dos líneas verdes del mapa.</p>
+
+       <img src="imagenes/zonas.jpg" width="50%" height="50%">
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a"data-position="fixed">
+       <h4>Aplicacion Tres, MPAP </h4>
+       </div>
+       </div>
+       </div>
+
+</body>
+</html>
+
+
